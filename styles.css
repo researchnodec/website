@@ -482,23 +482,30 @@ body {
 }
 
 .member-name {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
     font-weight: 700;
     margin-bottom: 10px;
     color: var(--text-primary);
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .member-role {
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 3vw, 1rem);
     color: var(--accent-green);
     margin-bottom: 15px;
     font-weight: 500;
+    line-height: 1.2;
+    word-wrap: break-word;
 }
 
 .member-description {
     color: var(--text-secondary);
     margin-bottom: 20px;
     line-height: 1.6;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .member-skills {
